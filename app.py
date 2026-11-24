@@ -13,7 +13,7 @@ sys.modules["sklearn.tree.tree"] = tree_classes
 st.title("Employee Salary Prediction")
 st.write("Welcome to Employee Salary Prediction App")
 
-model = joblib.load("employee_salary_model_new.pkl")
+model = joblib.load("employee_salary_model_.pkl")
 
 company = st.selectbox("Company", ["TCS", "Infosys"])
 age = st.number_input("Age", min_value=18, max_value=70, value=25)
